@@ -134,19 +134,4 @@ client.on("message", async message => {
   }
 });
 
-if(message.member.roles.find("name", "Büyücü Kral"){
-    client.on('message', msg => {
-  if (msg.content === 'Hizmetçilerim') {
-    msg.reply('Emrendin yüce olan!');
-  }
-}
-});
-
-} else {
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Senden emir almam aşşağılık!');
-}
-}
-          
 client.login(process.env.BOT_TOKEN);
