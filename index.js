@@ -134,10 +134,9 @@ client.on("message", async message => {
   }
 });
 
-client.on('message', message =&gt; {
-  if (message.content === 'Hizmetçilerim') {
-// Eğer mesaj "avatarım ne" ise sana kendi avatarını gönderir.
-    message.reply("Emredin efendim");
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
   }
 });
 
