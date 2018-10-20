@@ -134,4 +134,13 @@ client.on("message", async message => {
   }
 });
 
+if(!member(msg.guild.id).hasPermission(ADMIN)){return;}
+ 
+client.on('message', msg => {
+  if (msg.content === 'Hizmetçilerim') {
+    msg.reply('Emredin yüce olan!');
+  }
+});
+ 
+
 client.login(process.env.BOT_TOKEN);
